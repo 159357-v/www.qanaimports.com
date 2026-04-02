@@ -391,7 +391,7 @@ Veículos Novos e Seminovos e Investimentos Imobiliários
 <template id="vehicle-card-template">
   <div class="col-md-4">
     <div class="card">
-      <img src="" alt="" loading="lazy" class="vehicle-image">
+     <img src="" alt="" loading="lazy" class="vehicle-image">
       <div class="card-body">
         <h5 class="vehicle-name"></h5>
         <p class="vehicle-desc"></p>
@@ -523,7 +523,6 @@ const veiculos = [
 {tipo:"moto", nome:"Honda 750 Fl", descricao:"é uma moto clássica que marcou época pelo seu desempenho e estilo esportivo. Equipada com motor 750cc de quatro cilindros, oferece potência e ronco característico, sendo referência entre as superbikes da década de 70.", preco:"Consulte valor", imagem:"catalogo/Honda750FL.jpeg"},
 {tipo:"moto", nome:"Honda CB750", descricao:"é uma das motos mais icônicas da história do motociclismo, sendo o modelo que deu origem à lendária linha Gold Wingé uma das motos mais icônicas da história, conhecida como a primeira “superbike” de produção em massa", preco:"Consulte valor", imagem:"catalogo/HondaCB750.jpeg"},
 {tipo:"moto", nome:"Honda Goldwing Gl 1000", descricao:"é uma das motos mais icônicas da história do motociclismo, sendo o modelo que deu origem à lendária linha Gold Wing", preco:"Consulte valor", imagem:"catalogo/HondaGold.jpeg"},    
-{tipo:"moto", nome:"Honda CG 125", descricao:"conhecida carinhosamente como “Bolinha”, é um verdadeiro ícone das motocicletas no Brasil.", preco:"Consulte valor", imagem:"catalogo/HondaCG125.jpeg"},
 {tipo:"moto", nome:"Kawasaki Ninja 636", descricao:"Moto esportiva de alta performance", preco:"Consulte valor", imagem:"catalogo/ninja.jpg"},
 {tipo:"moto", nome:"Harley Davidson", descricao:"Moto premium de estilo clássico", preco:"Consulte valor", imagem:"catalogo/harley2.jpg"},
 {tipo:"carro", nome:"Puma GTB", descricao:"Clássico esportivo brasileiro", preco:"Consulte valor", imagem:"catalogo/puma.jpg"},
@@ -540,7 +539,251 @@ const veiculos = [
 {tipo:"carro", nome:"Renegade Sport", descricao:"SUV compacto", preco:"Consulte valor", imagem:"catalogo/RenegadeSport.jpeg"},
 {tipo:"carro", nome:"Uno Way 2014", descricao:"é um hatch compacto que se destaca pela sua praticidade e eficiência", preco:"Consulte valor", imagem:"catalogo/UnoWay.jpeg"},
 {tipo:"carro", nome:"Hilux SRX 2024 Turbo Diesel 4x4", descricao:"é uma picape premium que combina robustez, tecnologia e conforto de alto nível, sendo referência no segmento tanto para uso urbano quanto off-road.", preco:"Consulte valor", imagem:"catalogo/HiluxSRX.jpeg"},
-{tipo:"carro", nome:"Fiat Toro 2022 Turbo Diesel 4x4 ", descricao:"Picape moderna que une conforto de SUV com a robustez de uma caminhonete, perfeita para uso urbano e trabalho.", preco:"Consulte valor", imagem:"catalogo/Toroultra.jpeg"}
+{
+  tipo:"carro",
+  nome:"Del Rey Belina 1990",
+  descricao:"A Ford Del Rey Belina 1990 é uma perua clássica que marcou época no Brasil, conhecida pelo conforto, espaço interno e robustez mecânica.",
+  preco:"Consulte valor",
+  imagens:[
+    "catalogo/DelRey.jpeg",
+    "catalogo/DelRey2.jpeg",
+    "catalogo/DelRey3.jpeg"
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"Punto Essence Dualogic 1.6 16v 5p",
+  descricao:"é um hatch compacto com visual esportivo, bom nível de conforto e desempenho equilibrado. É conhecido por ser um carro completo, estável na estrada e com bom acabamento interno.",
+  preco:"Consulte valor",
+  imagens:[
+    "catalogo/Punto.jpeg",
+    "catalogo/Punto2.jpeg",
+    "catalogo/Punto3.jpeg",
+    "catalogo/Punto4.jpeg",
+    "catalogo/Punto5.jpeg",
+    "catalogo/Punto6.jpeg"
+
+  ]
+},
+{
+  tipo:"carro",
+  nome:"Corolla XEI 2.0 Flex 2014/2015",
+  descricao:"é um sedã médio conhecido pela confiabilidade, conforto e ótimo valor de revenda. Um dos carros mais procurados do Brasil, ideal tanto para uso urbano quanto para viagens.",
+  preco:"Consulte valor",
+  imagens:[
+    "catalogo/Corolla.jpeg",
+    "catalogo/Corolla2.jpeg",
+    "catalogo/Corolla3.jpeg",
+    "catalogo/Corolla4.jpeg",
+    "catalogo/Corolla5.jpeg"
+  
+
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"ChevRolet/Rolet 1995",
+  descricao:"conhecido pela robustez, mecânica simples e fácil manutenção. Os modelos dessa época são bastante valorizados por quem busca um carro resistente e de baixo custo de reparo.",
+  preco:"Consulte valor",
+  imagens:[
+    "catalogo/Chevrolet.jpeg",
+    "catalogo/Chevrolet2.jpeg",
+    "catalogo/Chevrolet3.jpeg",
+    "catalogo/Chevrolet4.jpeg"
+  
+
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"Honda Fit LX AUT 2014/2015",
+  descricao:"é um hatch compacto conhecido pela confiabilidade, economia e espaço interno surpreendente. Ideal para quem busca um carro confortável, versátil e com baixa dor de cabeça na manutenção.",
+  preco:"Consulte valor",
+  imagens:[
+    "catalogo/Hondafit.jpeg",
+    "catalogo/Hondafit2.jpeg",
+    "catalogo/Hondafit3.jpeg",
+    "catalogo/Hondafit4.jpeg"
+  
+
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"Polo Highline 200 TSI 1.0 Flex 12V Aut 2020",
+  descricao:"é um hatch moderno, econômico e com pegada esportiva, ideal para quem busca desempenho com baixo consumo e tecnologia. Um dos carros mais completos da categoria, muito valorizado na revenda.",
+  preco:"Consulte valor",
+  imagens:[
+    "catalogo/Polo.jpeg",
+    "catalogo/Polo2.jpeg",
+    "catalogo/Polo3.jpeg",
+    "catalogo/Polo4.jpeg",
+     "catalogo/Polo5.jpeg"
+  
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"Ranger Limited 2023/2024",
+  descricao:"Picape topo de linha, robusta e extremamente tecnológica, a Ranger Limited 2023/2024 entrega alto desempenho com conforto premium e excelente capacidade off-road.",
+  preco:"Consulte valor",
+  imagens:[
+    "catalogo/Rangercd.jpeg",
+    "catalogo/Rangercd2.jpeg",
+    "catalogo/Rangercd3.jpeg",
+    "catalogo/Rangercd4.jpeg"
+
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"Hilux CD SXR 4x4 Diesel 2023",
+  descricao:"é uma picape média topo de linha, reconhecida pela extrema resistência, conforto e capacidade off-road. Ideal tanto para trabalho pesado quanto para uso urbano com alto nível de tecnologia e segurança.",
+  preco:"Consulte valor",
+  imagens:[
+    "catalogo/Hiluxcd.jpeg",
+    "catalogo/Hiluxcd2.jpeg",
+    "catalogo/Hiluxcd3.jpeg",
+    "catalogo/Hiluxcd4.jpeg",
+    "catalogo/Hiluxcd5.jpeg"
+     
+     
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"Hilux SW4 SRV 4x4 2012",
+  descricao:"é um SUV grande e robusto, conhecido pela durabilidade, força e excelente desempenho fora de estrada. Um verdadeiro “tanque de guerra”, ideal tanto para uso familiar quanto para aventuras e trabalho pesado.",
+  preco:"Consulte valor",
+  imagens:[
+    "catalogo/Hiluxsw4srv.jpeg",
+    "catalogo/Hiluxsw4srv2.jpeg",
+    "catalogo/Hiluxsw4srv3.jpeg",
+    "catalogo/Hiluxsw4srv4.jpeg",
+    "catalogo/Hiluxsw4srv5.jpeg",
+    "catalogo/Hiluxsw4srv6.jpeg"
+     
+     
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"Mercedes-Benz/GLA 200 2017",
+  descricao:"é um SUV compacto premium que combina luxo, desempenho e tecnologia, ideal para quem busca conforto e status no dia a dia. Com design moderno e acabamento refinado, é um dos modelos mais desejados da categoria.",
+  imagens:[
+    "catalogo/Mercedes.jpeg",
+    "catalogo/Mercedes2.jpeg",
+    "catalogo/Mercedes3.jpeg",
+    "catalogo/Mercedes4.jpeg",
+    "catalogo/Mercedes5.jpeg",
+    "catalogo/Mercedes6.jpeg"
+     
+     
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"Uno Mille Economy 2010",
+  descricao:"é um hatch compacto conhecido pela economia, simplicidade e baixo custo de manutenção, sendo uma excelente opção para quem busca um carro barato e confiável para o dia a dia..",
+  imagens:[
+    "catalogo/UnoMille.jpeg",
+    "catalogo/UnoMille2.jpeg",
+    "catalogo/UnoMille3.jpeg",
+    "catalogo/UnoMille4.jpeg",
+    "catalogo/UnoMille5.jpeg"
+     
+     
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"Hilux/Toyota 2012",
+  descricao:"é uma picape média reconhecida pela resistência, durabilidade e excelente desempenho em qualquer terreno. Muito utilizada tanto para trabalho pesado quanto para uso pessoal, é considerada uma das picapes mais confiáveis do mercado",
+  imagens:[
+    "catalogo/Hiluxx.jpeg",
+    "catalogo/Hiluxx2.jpeg",
+    "catalogo/Hiluxx3.jpeg",
+    "catalogo/Hiluxx4.jpeg",
+    "catalogo/Hiluxx5.jpeg"
+     
+     
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"Fusca 1500 1972",
+  descricao:"é um dos carros mais icônicos do Brasil, conhecido pelo seu design clássico, mecânica simples e extrema durabilidade. Um verdadeiro símbolo automotivo, ideal tanto para colecionadores quanto para quem busca um carro antigo confiável.",
+  imagens:[
+    "catalogo/Fuscavw.jpeg",
+    "catalogo/Fuscavw2.jpeg",
+    "catalogo/Fuscavw3.jpeg",
+    "catalogo/Fuscavw4.jpeg",
+    "catalogo/Fuscavw5.jpeg",
+    "catalogo/Fuscavw6.jpeg"
+     
+     
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"Kia/Carens 2011",
+  descricao:"é uma minivan ideal para famílias, oferecendo muito espaço interno, conforto e versatilidade, com capacidade para até 7 passageiros. É um carro completo, confortável para viagens e ótimo para quem precisa de espaço no dia a dia.",
+  imagens:[
+    "catalogo/Carens.jpeg",
+    "catalogo/Carens2.jpeg",
+    "catalogo/Carens3.jpeg",
+    "catalogo/Carens4.jpeg",
+    "catalogo/Carens5.jpeg",
+    "catalogo/Carens6.jpeg"
+     
+     
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"Subaru/Svx 3.3 1992",
+  descricao:"é um cupê esportivo raro e sofisticado, considerado um verdadeiro clássico dos anos 90. Desenvolvido como um grand tourer de luxo, combina desempenho forte com conforto para viagens longas, além de um design futurista e exclusivo.",
+  imagens:[
+    "catalogo/Subaru.jpeg",
+    "catalogo/Subaru2.jpeg",
+    "catalogo/Subaru3.jpeg",
+    "catalogo/Subaru4.jpeg",
+    "catalogo/Subaru5.jpeg",
+    "catalogo/Subaru6.jpeg"
+         
+  ]
+},
+
+{
+  tipo:"carro",
+  nome:"Camry Xle 1997 ",
+  descricao:"é um sedã grande, confortável e extremamente confiável, conhecido pela sua durabilidade, suavidade na direção e ótimo acabamento. Um carro de padrão executivo da época, ideal para quem busca conforto e mecânica resistente.",
+  imagens:[
+    "catalogo/Camry.jpeg",
+    "catalogo/Camry2.jpeg",
+    "catalogo/Camry3.jpeg",
+    "catalogo/Camry4.jpeg",
+    "catalogo/Camry5.jpeg"
+          
+  ]
+}
+
+
+
+
 
 ];
 
@@ -549,16 +792,65 @@ const lista = document.getElementById("lista-veiculos");
 const template = document.getElementById("vehicle-card-template");
 const filterButtons = document.querySelectorAll("[data-filter]");
 
-function createVehicleCard(veiculo) {
+function createVehicleCard(veiculo, index) {
   const clone = template.content.cloneNode(true);
+
   const img = clone.querySelector(".vehicle-image");
   const name = clone.querySelector(".vehicle-name");
   const desc = clone.querySelector(".vehicle-desc");
   const price = clone.querySelector(".vehicle-price");
   const link = clone.querySelector(".vehicle-link");
 
-  img.src = veiculo.imagem;
-  img.alt = veiculo.nome;
+  // 🔥 VERIFICA SE TEM VÁRIAS IMAGENS
+  if (veiculo.imagens) {
+    const carouselId = "carousel-" + index;
+
+    const card = clone.querySelector(".card");
+
+    // remove imagem padrão
+    img.remove();
+
+    // cria carousel
+    const carousel = document.createElement("div");
+    carousel.id = carouselId;
+    carousel.className = "carousel slide";
+    carousel.setAttribute("data-bs-ride", "carousel");
+
+    const inner = document.createElement("div");
+    inner.className = "carousel-inner";
+
+    veiculo.imagens.forEach((src, i) => {
+      const item = document.createElement("div");
+      item.className = "carousel-item" + (i === 0 ? " active" : "");
+
+      const image = document.createElement("img");
+      image.src = src;
+      image.className = "d-block w-100";
+      image.style.height = "320px";
+      image.style.objectFit = "cover";
+
+      item.appendChild(image);
+      inner.appendChild(item);
+    });
+
+    carousel.innerHTML = `
+      <div class="carousel-inner">${inner.innerHTML}</div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#${carouselId}" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#${carouselId}" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    `;
+
+    card.insertBefore(carousel, card.firstChild);
+
+  } else {
+    // 🔥 imagem normal
+    img.src = veiculo.imagem;
+    img.alt = veiculo.nome;
+  }
+
   name.textContent = veiculo.nome;
   desc.textContent = veiculo.descricao;
   price.textContent = veiculo.preco;
@@ -572,7 +864,11 @@ function createVehicleCard(veiculo) {
 function mostrar(listaFiltrada) {
   lista.innerHTML = "";
   const fragment = document.createDocumentFragment();
-  listaFiltrada.forEach(v => fragment.appendChild(createVehicleCard(v)));
+
+ listaFiltrada.forEach((v, i) => {
+  fragment.appendChild(createVehicleCard(v, i));
+});
+
   lista.appendChild(fragment);
 }
 
