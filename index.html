@@ -9,7 +9,7 @@
 <meta property="og:title" content="Qana Imports Car">
 <meta property="og:description" content="Veículos novos e seminovos e investimentos imobiliários." />
 <meta property="og:type" content="website">
-<meta property="og:image" content="img/banner.">
+<meta property="og:image" content="img/banner.jpeg">
 
 <title>Qana Imports Car</title>
 
@@ -194,61 +194,6 @@ justify-content:center;
 font-size:30px;
 color:white;
 text-decoration:none;
-}
-
-@media(max-width:768px){
-
-/* HERO */
-.hero{
-height:70vh;
-padding:20px;
-background-position:center 85%;
-}
-
-.hero-content{
-transform: translateY(-50px);
-}
-
-.titulo-empresa{
-font-size:32px;
-letter-spacing:1px;
-}
-
-.slogan{
-font-size:14px;
-padding:0 10px;
-}
-
-/* BOTÕES */
-.btn-qana{
-width:100%;
-max-width:300px;
-font-size:14px;
-}
-
-/* CARDS */
-.card img{
-height:220px;
-}
-
-.card-body{
-padding:15px;
-}
-
-/* MENU */
-.navbar-brand img{
-height:35px;
-}
-
-/* WHATSAPP */
-.whatsapp{
-width:55px;
-height:55px;
-font-size:24px;
-bottom:15px;
-right:15px;
-}
-
 }
 
 @media(max-width:768px){
@@ -526,7 +471,7 @@ const veiculos = [
 
 {
   tipo:"carro",
-  nome:"ChevRolet/Rolet 1995",
+  nome:"Chevrolet 1995",
   descricao:"conhecido pela robustez, mecânica simples e fácil manutenção. Os modelos dessa época são bastante valorizados por quem busca um carro resistente e de baixo custo de reparo.",
   preco:"Consulte valor",
   imagens:[
@@ -620,6 +565,7 @@ const veiculos = [
   tipo:"carro",
   nome:"Mercedes-Benz/GLA 200 2017",
   descricao:"é um SUV compacto premium que combina luxo, desempenho e tecnologia, ideal para quem busca conforto e status no dia a dia. Com design moderno e acabamento refinado, é um dos modelos mais desejados da categoria.",
+  preco:"Consulte valor",
   imagens:[
     "catalogo/Mercedes.jpeg",
     "catalogo/Mercedes2.jpeg",
@@ -636,6 +582,7 @@ const veiculos = [
   tipo:"carro",
   nome:"Uno Mille Economy 2010",
   descricao:"é um hatch compacto conhecido pela economia, simplicidade e baixo custo de manutenção, sendo uma excelente opção para quem busca um carro barato e confiável para o dia a dia..",
+  preco:"Consulte valor",
   imagens:[
     "catalogo/UnoMille.jpeg",
     "catalogo/UnoMille2.jpeg",
@@ -651,6 +598,7 @@ const veiculos = [
   tipo:"carro",
   nome:"Hilux/Toyota 2012",
   descricao:"é uma picape média reconhecida pela resistência, durabilidade e excelente desempenho em qualquer terreno. Muito utilizada tanto para trabalho pesado quanto para uso pessoal, é considerada uma das picapes mais confiáveis do mercado",
+  preco:"Consulte valor",
   imagens:[
     "catalogo/Hiluxx.jpeg",
     "catalogo/Hiluxx2.jpeg",
@@ -666,6 +614,7 @@ const veiculos = [
   tipo:"carro",
   nome:"Fusca 1500 1972",
   descricao:"é um dos carros mais icônicos do Brasil, conhecido pelo seu design clássico, mecânica simples e extrema durabilidade. Um verdadeiro símbolo automotivo, ideal tanto para colecionadores quanto para quem busca um carro antigo confiável.",
+  preco:"Consulte valor",
   imagens:[
     "catalogo/Fuscavw.jpeg",
     "catalogo/Fuscavw2.jpeg",
@@ -682,6 +631,7 @@ const veiculos = [
   tipo:"carro",
   nome:"Kia/Carens 2011",
   descricao:"é uma minivan ideal para famílias, oferecendo muito espaço interno, conforto e versatilidade, com capacidade para até 7 passageiros. É um carro completo, confortável para viagens e ótimo para quem precisa de espaço no dia a dia.",
+  preco:"Consulte valor",
   imagens:[
     "catalogo/Carens.jpeg",
     "catalogo/Carens2.jpeg",
@@ -698,6 +648,7 @@ const veiculos = [
   tipo:"carro",
   nome:"Subaru/Svx 3.3 1992",
   descricao:"é um cupê esportivo raro e sofisticado, considerado um verdadeiro clássico dos anos 90. Desenvolvido como um grand tourer de luxo, combina desempenho forte com conforto para viagens longas, além de um design futurista e exclusivo.",
+  preco:"Consulte valor",
   imagens:[
     "catalogo/Subaru.jpeg",
     "catalogo/Subaru2.jpeg",
@@ -713,6 +664,7 @@ const veiculos = [
   tipo:"carro",
   nome:"Camry Xle 1997 ",
   descricao:"é um sedã grande, confortável e extremamente confiável, conhecido pela sua durabilidade, suavidade na direção e ótimo acabamento. Um carro de padrão executivo da época, ideal para quem busca conforto e mecânica resistente.",
+  preco:"Consulte valor",
   imagens:[
     "catalogo/Camry.jpeg",
     "catalogo/Camry2.jpeg",
@@ -725,8 +677,9 @@ const veiculos = [
 
 {
   tipo:"carro",
-  nome:"Linconln 1987 ",
+  nome:"Lincoln 1987 ",
   descricao:"é um carro clássico de luxo americano, conhecido pelo conforto extremo, tamanho imponente e visual elegante típico dos anos 80.",
+  preco:"Consulte valor",
   imagens:[
     "catalogo/Linconln.jpeg",
     "catalogo/Linconln2.jpeg",
@@ -811,8 +764,8 @@ function createVehicleCard(veiculo, index) {
   desc.textContent = veiculo.descricao;
   price.textContent = veiculo.preco;
 
-  const whatsappText = encodeURIComponent(Tenho interesse no ${veiculo.nome});
-  link.href = https://wa.me/${wppPhone}?text=${whatsappText};
+  const whatsappText = encodeURIComponent(`Tenho interesse no ${veiculo.nome}`);
+  link.href = `https://wa.me/${wppPhone}?text=${whatsappText}`;
 
   return clone;
 }
