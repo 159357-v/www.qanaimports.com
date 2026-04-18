@@ -341,7 +341,6 @@ background-color:black; /* fundo pra não ficar feio */
 <ul class="navbar-nav ms-auto">
 
 <li class="nav-item"><a class="nav-link" href="#veiculos">Veículos</a></li>
-<li class="nav-item"><a class="nav-link" href="#imoveis">Imóveis</a></li>
 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
 
 </ul>
@@ -384,7 +383,7 @@ Veículos Novos e Seminovos e Investimentos Imobiliários
 
 <button class="btn btn-qana" data-filter="moto" onclick="filtrar('moto')">Motos</button>
 
-<a href="#imoveis" class="btn btn-qana">Imóveis</a>
+
 
 </div>
 
@@ -408,47 +407,6 @@ Veículos Novos e Seminovos e Investimentos Imobiliários
 
 </section>
 
-<!-- IMOVEIS -->
-
-<section id="imoveis" class="section">
-
-<div class="container">
-
-<h2 class="mb-5">Imóveis</h2>
-
-<div class="row g-4">
-
-<div class="col-md-6">
-
-<div class="card">
-
-<img src="imoveis/imovel1.jpeg" alt="Casa de alto padrão" loading="lazy">
-
-<div class="card-body">
-
-<h5>Casa de Alto Padrão</h5>
-
-<p>Imóvel moderno com excelente localização e grande potencial de valorização.</p>
-
-<h4>Consulte valor</h4>
-
-<a href="https://wa.me/5561992331918?text=Tenho%20interesse%20no%20imóvel" class="btn btn-qana">
-
-<i class="fa-brands fa-whatsapp"></i> Tenho interesse
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
 
 <!-- CONTATO -->
 
@@ -478,23 +436,7 @@ Veículos Novos e Seminovos e Investimentos Imobiliários
 
 <div class="col-md-6">
 
-<iframe
-src="https://www.google.com/maps?q=-15.851455,-48.067137&output=embed"
-width="100%"
-height="250"
-style="border:0;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.6);"
-loading="lazy">
-</iframe>
 
-<div class="text-center mt-3">
-
-<a href="https://www.google.com/maps/dir/?api=1&destination=-15.851455,-48.067137" target="_blank" class="btn btn-qana">
-
-<i class="fa-solid fa-location-dot"></i> Como chegar
-
-</a>
-
-</div>
 
 </div>
 
@@ -507,7 +449,7 @@ loading="lazy">
 <footer>
 
 <h4>Qana Imports Car</h4>
-<p>© 2026 Todos os direitos reservados</p>
+<p>©️ 2026 Todos os direitos reservados</p>
 
 </footer>
 
@@ -779,6 +721,20 @@ const veiculos = [
     "catalogo/Camry5.jpeg"
           
   ]
+},
+
+{
+  tipo:"carro",
+  nome:"Linconln 1987 ",
+  descricao:"é um carro clássico de luxo americano, conhecido pelo conforto extremo, tamanho imponente e visual elegante típico dos anos 80.",
+  imagens:[
+    "catalogo/Linconln.jpeg",
+    "catalogo/Linconln2.jpeg",
+    "catalogo/Linconln3.jpeg",
+    "catalogo/Linconln4.jpeg",
+    "catalogo/Linconln5.jpeg",
+    "catalogo/Linconln6.jpeg",       
+  ]
 }
 
 
@@ -855,8 +811,8 @@ function createVehicleCard(veiculo, index) {
   desc.textContent = veiculo.descricao;
   price.textContent = veiculo.preco;
 
-  const whatsappText = encodeURIComponent(`Tenho interesse no ${veiculo.nome}`);
-  link.href = `https://wa.me/${wppPhone}?text=${whatsappText}`;
+  const whatsappText = encodeURIComponent(Tenho interesse no ${veiculo.nome});
+  link.href = https://wa.me/${wppPhone}?text=${whatsappText};
 
   return clone;
 }
